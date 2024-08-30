@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,8 +24,14 @@ namespace polymorphism
 
         public class Square: BaseGeometricShape
         {
-          
+
+        public double CalculateArea(double height)
+        {
+            double area = (height * height);
+            return area;
         }
+
+    }
 
         public class Rectangle : BaseGeometricShape
         {
